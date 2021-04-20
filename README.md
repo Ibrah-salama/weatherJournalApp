@@ -16,13 +16,13 @@
      - handling date and data from the weather API and add it to the HTML elements.
 ## Code area 
 ## for the server: 
-<img src="imgs/server.png" />
+<img src="imgs/server.PNG" />
 
 ## For the api global var and action listener button:
-<img src="imgs/actionAndAPI.png" />
+<img src="imgs/actionAndAPI.PNG" />
 
 ## For the rest:
-<img src="imgs/REST.png" />
+<img src="imgs/REST.PNG" />
 
 ## Final Result: 
 <img src="imgs/FINAL.PNG" />
