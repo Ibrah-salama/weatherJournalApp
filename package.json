@@ -1,0 +1,26 @@
+{
+  "name": "weather-journal-app",
+  "version": "1.0.0",
+  "description": "## Weather Journal App (Front End Developer Udacity Nanodegree): #### technologies used:  HTML, CSS, (vanilla)js node js  ## Project Objectives:  #### about working with Web APIs and asynchronous code, creating a web app that uses OpenWeatherMap API to get weather based on user's location. ## prerequisits:       1. Setup Node and packages (express, cors and body-parser) must be installed.      2. Create the server that listens on a Port and a host (local host). ## Development Stratiegy:       - Create the server with localhost (172.0.0.1) and port (8000).      - Installing Express, CORS and body-parser.      - create get and post API to control reqused and responsed data.      - generate a public key from openWeather API and use it as a url header for the application.       - using vanilla js to control HTML elements and add action listener to the generate button.      - handling date and data from the weather API and add it to the HTML elements. ## Code area  ## for the server:  <img src=\"imgs/server.PNG\" />",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-salama/weatherJournalApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-salama/weatherJournalApp/issues"
+  },
+  "homepage": "https://github.com/i-salama/weatherJournalApp#readme"
+}
