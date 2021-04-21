@@ -1,10 +1,12 @@
 /* Global Variables */
 const baseURL = 'http://api.openweathermap.org/data/2.5/forecast?zip='
-const key = '&appid=8957ffb1663acf6ab0298b3606bb1163';
+const key = '&appid=8957ffb1663acf6ab0298b3606bb1163&units=imperial';
 const generateBtn = document.querySelector('#generate');
 // Create a new date instance dynamically with JS
 let d = new Date();
-let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+let newDate = (d.getMonth() + 1) + '/'+ d.getDate()+'/'+ d.getFullYear();
+console.log(newDate);
+// let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
 // add event listener on the generator button 
 generateBtn.addEventListener('click',()=>{
     const newZipCode = document.querySelector('#zip').value;
@@ -37,10 +39,11 @@ const updateUi= async()=>{
     const request = await fetch('/all');
     try{
         const allData = await request.json()
-        document.querySelector('#date').innerHTML=`Date: ${allData[0].date}`;
-        document.querySelector('#temp').innerHTML=`Temp: ${allData[0].temp}`;
-        document.querySelector('#content').innerHTML=`feel: ${allData[0].content}`
+        document.querySelector('#date').innerHTML=`Date: ${allData.date}`;
+        document.querySelector('#temp').innerHTML=`Temp: ${allData.temp}`;
+        document.querySelector('#content').innerHTML=`feel: ${allData.content}`
     }catch(err){
         console.log(err.message)
+        document.querySelector('#date').innerHTML=`Unfortunatly Thers Is no data, Please contact the admintsrator`;
     }
 }
